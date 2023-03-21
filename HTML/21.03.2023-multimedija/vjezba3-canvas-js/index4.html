@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>
+        Proizvoljna linija
+    </h2>
+    <canvas id="canvas" width="600" height="200"></canvas>
+    <script>
+        var c = document.getElementById("canvas");
+        var ctx = c.getContext("2d");
+        ctx.beginPath();
+        ctx.moveTo(170,80);
+        ctx.bezierCurveTo(130,100,130,150,230,150);
+        ctx.bezierCurveTo(250,180,320,180,340,150);
+        ctx.alignWidth = 5;
+        ctx.strokeStyle="red";
+        ctx.stroke();
+     </script>
+
+     <canvas id="canvas2" width="600" height="200"></canvas>
+     <script>
+        const t = document.getElementById("canvas2");
+        const tx = t.getContext("2d");
+        const x = 50;
+        tx.fillText("Ovo je primjer teksta", x, 100);
+        tx.font = "bold 60px 'Curier New'";
+        tx.fillStyle = "#F00";
+     </script>
+    </body>
+</html>

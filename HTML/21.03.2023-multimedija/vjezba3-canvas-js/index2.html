@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Canvas</title>
+  </head>
+  <body>
+    <h1>Canvas</h1>
+    <h2>Linija</h2>
+    <canvas id="canvas1" width="600" height="200"></canvas>
+    <script>
+      const c = document.getElementById("canvas1");
+      const ctx = c.getContext("2d");
+      ctx.beginPath();
+      ctx.moveTo(30, 180);
+      ctx.lineTo(600, 30);
+      ctx.lineWidth = 8;
+      ctx.strokeStyle = "red";
+      ctx.stroke();
+    </script>
+    <hr />
+    <h2>Kvadrat</h2>
+    <canvas id="canvas2" width="600" height="200"></canvas>
+    <script>
+      var y = document.getElementById("canvas2");
+      var tx = y.getContext("2d");
+      tx.beginPath();
+      tx.rect(20, 20, 150, 150);
+      tx.fillStyle = "#FF6";
+      tx.fill();
+      tx.strokeStyle = "#333";
+      tx.lineWidth = 7;
+      tx.stroke();
+    </script>
+    <hr />
+    <h2>KRUG</h2>
+    <canvas id="canvas3" width="600" height="200"></canvas>
+    <script>
+      var t = document.getElementById("canvas3");
+      var sct = t.getContext("2d");
+      var cx = t.width / 2;
+      var cy = t.height / 2;
+      var radius = 80;
+      sct.beginPath();
+      sct.fillStyle = "#F00";
+      sct.fill();
+      sct.strokeStyle = "black";
+      sct.lineWidth = 5;
+      sct.stroke();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>
+        KRUG
+    </h2>
+    <canvas id="canvas" width="600" height="200"></canvas>
+    <script>
+        var c = document.getElementById("canvas");
+        var ctx = c.getContext("2d");
+        var cx = c.width / 2;
+        var cy = c.height / 2;
+        var radius = 80;
+        ctx.beginPath();
+        ctx.fillStyle="#F00";
+        ctx.fill();
+        ctx.strokeStyle="black";
+        ctx.lineWidth=5;
+        ctx.stroke();
+        
+    </script>
+</html>
