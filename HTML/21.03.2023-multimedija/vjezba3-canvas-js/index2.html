@@ -36,19 +36,21 @@
     </script>
     <hr />
     <h2>KRUG</h2>
-    <canvas id="canvas3" width="600" height="200"></canvas>
+    <canvas id="myCanvas2" width="600" height="200"></canvas>
     <script>
-      var t = document.getElementById("canvas3");
-      var sct = t.getContext("2d");
-      var cx = t.width / 2;
-      var cy = t.height / 2;
-      var radius = 80;
-      sct.beginPath();
-      sct.fillStyle = "#F00";
-      sct.fill();
-      sct.strokeStyle = "black";
-      sct.lineWidth = 5;
-      sct.stroke();
+        var u = document.getElementById("myCanvas2"); //dohvaćanje canvasa
+        var utx = u.getContext("2d") // kreiranje objekta
+        var centerX = c.width / 2;
+        var centerY = c.height / 2;
+        var radius = 80;
+
+        utx.beginPath();
+        utx.arc(centerX, centerY, radius, 0, 2 * Math.PI); //starting angle as 0 and the ending angle as 2 * PI.;
+        utx.fillStyle = "#F00";
+        utx.fill();
+        utx.strokeStyle = "#333";
+        utx.lineWidth = 5;
+        utx.stroke();
     </script>
   </body>
 </html>

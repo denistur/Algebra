@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="myCanvas2" width="600" height="200"></canvas>
+    <script>
+        var c = document.getElementById("myCanvas2"); //dohvaćanje canvasa
+        var ctx = c.getContext("2d") // kreiranje objekta
+        var centerX = c.width / 2;
+        var centerY = c.height / 2;
+        var radius = 80;
+
+        ctx.beginPath();
+        ctx.arc(centerX, centerY, radius, 0, 2 * Math.PI); //starting angle as 0 and the ending angle as 2 * PI.;
+        ctx.fillStyle = "#F00";
+        ctx.fill();
+        ctx.strokeStyle = "#333";
+        ctx.lineWidth = 5;
+        ctx.stroke();
+    </script>
+    
+</body>
+</html>
